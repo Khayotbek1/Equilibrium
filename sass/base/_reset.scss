@@ -1,0 +1,76 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+*:focus {
+    outline: $primary-color 1px dashed;
+    outline-offset: 3px;
+}
+html {
+    height: 100%;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+ul,li{
+    list-style: none;
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    display: flex;
+}
+
+a{
+    text-decoration: none;
+}
+
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-weight: 400;
+    font-family: $site-fonts;
+    color: $text-color;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    background-color: $site-bg-color;
+}
+
+span{
+    color: $text-color;
+}
+/* outfit-300 - latin */
+@font-face {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 300;
+    src: local(''),
+         url('../fonts/outfit-v6-latin-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/outfit-v6-latin-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* outfit-regular - latin */
+  @font-face {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/outfit-v6-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/outfit-v6-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* outfit-600 - latin */
+  @font-face {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 600;
+    src: local(''),
+         url('../fonts/outfit-v6-latin-600.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/outfit-v6-latin-600.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
